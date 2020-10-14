@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Black.woff2") format("woff2"),
+    url("../fonts/Gilroy-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"),
+    url("../fonts/Gilroy-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"),
+    url("../fonts/Gilroy-UltraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ol li,
+ul li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "Gilroy", sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* -------------- */
+
+.main {
+  /* max-width: 1140px; */
+  margin: 100px 0px;
+  /* text-align: center; */
+}
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: bisque;
+}
+.footer {
+  height: 100px;
+  background-color: bisque;
+}
+.documents {
+  color: #333333;
+  padding: 90px 0px 70px 0px;
+}
+
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.documents-title {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #333333;
+}
+.documents-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  min-height: 190px;
+  text-align: center;
+  box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.1);
+  margin: 0px 15px 30px 15px;
+}
+
+.documents-column_margin-left {
+  margin: 0px 0px 30px 15px;
+}
+
+.documents-item {
+}
+.documents-item__icon {
+  margin: 40px auto 20px;
+  width: 64px;
+  height: 64px;
+}
+._img {
+  width: 100%;
+}
+.documents-item__text {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0px 0px 0px 0px;
+}
+.news {
+  padding: 0px 0px 40px 0px;
+}
+.news__title {
+  margin: 0px 0px 60px 0px;
+}
+
+.news-column {
+  display: inline-block;
+  width: 262px;
+  min-height: 348px;
+  padding: 25px;
+  margin: 0px 30px 30px 0px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.068);
+}
+.news-item {
+}
+.news-item__img {
+  width: 215px;
+  height: 146px;
+  margin: 0px 0px 15px 0px;
+  overflow: hidden;
+}
+
+.news-item__data {
+  font-size: 14px;
+  color: #ababab;
+  margin: 0px 0px 12px 0px;
+}
+.news-item__title {
+  font-size: 19px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1.2;
+  margin: 0px 0px 15px 0px;
+}
+.news-item__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 1.2;
+  margin: 0px 0px 15px 0px;
+}
+.news-column_margin-left {
+  margin: 0px 0px 30px 0px;
+}
+.advantage {
+  background-color: #f6f6f6;
+}
+
+.advantage-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 262px;
+  min-height: 340px;
+  text-align: center;
+  margin: 0px 30px 30px 0px;
+  padding: 0px 25px;
+  color: #333333;
+}
+.advantage-item {
+}
+.advantage-item__icon {
+  margin: 40px auto 18px;
+  width: 98px;
+  height: 98px;
+}
+.advantage-item__title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0px 0px 15px 0px;
+}
+.advantage-item__text {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.advantage-column_margin-left {
+  margin: 0px 0px 30px 0px;
+}
+.advantage-column_padding {
+  padding: 0px;
+}
+.advantage-item__text_padding {
+  padding: 0px 25px;
+}
+.documents-column:hover {
+  box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.news-column:hover {
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.advantage-column:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+.programs {
+  padding: 40px 0px;
+}
+.programs__title {
+  text-align: center;
+  margin: 0px 0px 60px 0px;
+}
+
+.programs-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 262px;
+  min-height: 366px;
+  text-align: center;
+  margin: 0px 30px 30px 0px;
+  padding: 25px;
+  color: #333333;
+  box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.1);
+}
+.programs-item {
+}
+.programs-item__img {
+  width: 215px;
+  height: 149px;
+  margin: 0px 0px 15px 0px;
+  overflow: hidden;
+}
+.programs-item__text {
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.programs-item__group {
+}
+.programs-item__text1 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #53b43b;
+  margin: 0px 0px 10px 0px;
+}
+.programs-column:hover .programs-item__img img {
+  scale: 1.1;
+}
+.programs-column_margin-left {
+  margin: 0px 0px 30px 0px;
+}
+.header-bottom {
+  padding: 30px 0px;
+  text-align: center;
+}
+.header-bottom-navigation li {
+  display: inline-block;
+  margin: 0px 50px 0px 0px;
+}
+.header-bottom-navigation li:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.header-bottom-navigation__item {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header-bottom-navigation__link {
+  color: #333333;
+}
+.header-bottom-navigation__link:hover {
+  color: red;
+}
+.header-bottom-navigation__link:active {
+  color:green;
+}
